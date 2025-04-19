@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "hana",
+  "version": "Alpha",
+  "name": "hana",
+  "icon": "assets/minecraft/icon.png",
+  "description": "skid client for Nullpoint,NullpointX,FlyBird,Wurst,Alien,Curt41n,Aoba,Rebirth,Novoline",
+  "authors": [
+    "Recollect_Wink"
+  ],
+  "accessWidener": "hana.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.recollect.hana.Hana"
+    ]
+  },
+  "mixins": [
+    "hana.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.20.4",
+    "java": "\u003e\u003d17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/satin-1.15.0.jar"
+    }
+  ]
+}

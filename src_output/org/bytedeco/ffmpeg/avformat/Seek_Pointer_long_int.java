@@ -1,0 +1,43 @@
+/*
+ * Decompiled with CFR 0.145.
+ * 
+ * Could not load the following classes:
+ *  org.bytedeco.javacpp.FunctionPointer
+ *  org.bytedeco.javacpp.Loader
+ *  org.bytedeco.javacpp.Pointer
+ *  org.bytedeco.javacpp.annotation.Cast
+ *  org.bytedeco.javacpp.annotation.Properties
+ */
+package org.bytedeco.ffmpeg.avformat;
+
+import org.bytedeco.ffmpeg.presets.avformat;
+import org.bytedeco.javacpp.FunctionPointer;
+import org.bytedeco.javacpp.Loader;
+import org.bytedeco.javacpp.Pointer;
+import org.bytedeco.javacpp.annotation.Cast;
+import org.bytedeco.javacpp.annotation.Properties;
+
+@Properties(inherit={avformat.class})
+public class Seek_Pointer_long_int
+extends FunctionPointer {
+    protected Seek_Pointer_long_int() {
+        Seek_Pointer_long_int a;
+        Seek_Pointer_long_int seek_Pointer_long_int = a;
+        seek_Pointer_long_int.allocate();
+    }
+
+    public Seek_Pointer_long_int(Pointer pointer) {
+        Seek_Pointer_long_int a = pointer;
+        Seek_Pointer_long_int a2 = this;
+        super((Pointer)a);
+    }
+
+    private native /* synthetic */ void allocate();
+
+    static {
+        Loader.load();
+    }
+
+    @Cast(value={"int64_t"})
+    public native long call(Pointer var1, @Cast(value={"int64_t"}) long var2, int var4);
+}
